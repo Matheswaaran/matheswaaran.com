@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+yarn.lock
+package-lock.json
 
 # testing
 /coverage
@@ -32,3 +34,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Local Netlify folder
+.netlify
