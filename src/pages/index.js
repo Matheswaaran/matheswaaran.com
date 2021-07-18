@@ -1,21 +1,32 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from "react";
+import { Impress, Step } from 'react-impressjs';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO />
+    <Impress progress={true} fallbackMessage={<p>Sorry, your <b>device or browser</b> couldn't support well.</p>}>
+      <Step
+        className={'without_id_is_ok'}
+        data={{
+          x:-1000,
+          y:-1500
+        }}
+      >
+        <h1>Steps</h1>
+      </Step>
+      <Step
+        data={{
+          y:-1500
+        }}
+        duration={1500}
+      >
+        <h1>Any Element write in Step!</h1>
+        <hr />
+        <p>Made by your <b>Creativity</b> !!</p>
+      </Step>
+    </Impress>
   </Layout>
 )
 

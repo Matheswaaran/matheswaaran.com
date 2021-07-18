@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `matheswaaran.com`,
+    title: `Matheswaaran`,
     description: `All about Mat (Matheswaaran)😉`,
     author: `@matheswaaran`,
+    resume: "https://tinyurl.com/matsresume",
+    mail: "matheswaaran@gmail.com",
+    github: "https://github.com/matheswaaran",
+    twitter: "https://twitter.com/matheswaaran_s",
+    linkedIn: "https://www.linkedin.com/in/matheswaaran/",
+    instagram: "https://instagram.com/matheswaaran"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
