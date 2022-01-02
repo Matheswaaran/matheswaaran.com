@@ -5,6 +5,7 @@ const Header = (props) => {
   return (
     <Head>
       <title>Home - matheswaaran.com</title>
+      <link rel="icon" href="/favicon.ico" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@matheswaaran_s" />
       <meta name="twitter:creator" content="@matheswaaran_s" />

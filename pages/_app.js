@@ -1,17 +1,28 @@
 import React from "react";
-import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
+
 import Header from "../components/Header";
-import TopNavigationBar from "../components/TopNavigationBar";
+import TopNavBar from "../components/TopNavBar";
 import Footer from "../components/Footer";
+
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <React.Fragment>
+    <ThemeProvider attribute="class">
       <Header />
-      <TopNavigationBar />
-      <Component {...pageProps} />
-      <Footer />
-    </React.Fragment>
+      <div className="flex flex-col h-screen">
+        <header>
+          <TopNavBar />
+        </header>
+        <main className="flex-grow">
+          <Component {...pageProps} />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </ThemeProvider>
   );
 }
 

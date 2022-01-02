@@ -42,6 +42,10 @@
   src: url('../public/fonts/Gilroy-SemiBoldItalic.ttf');
 }
 
+#__next {
+  @apply bg-white dark:bg-dark;
+}
+
 html,
 body {
   padding: 0;
