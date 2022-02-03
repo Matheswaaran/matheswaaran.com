@@ -1,16 +1,14 @@
 import React from "react";
 import { useTheme } from "next-themes";
-
-import images from "../../assets/images";
-import Image from "next/image";
+import NextImage from "../NextImage";
 
 const ThemeToggle = (props) => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <Image
+    <NextImage
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      src={theme === "dark" ? images.lightMode : images.darkMode}
+      src="mode"
       alt="Toggle dark theme"
       className="cursor-pointer"
     />

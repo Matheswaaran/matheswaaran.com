@@ -1,16 +1,12 @@
 import React from "react";
-import Image from "next/image";
-import { useTheme } from "next-themes";
 
 import SiteData from "../../data/SiteData.json";
-import images from "../../assets/images";
 import Button from "../Button";
 import ThemeToggle from "./ThemeToggle";
 import SocialMediaProfiles from "./SocialMediaProfiles";
+import NextImage from "../NextImage";
 
 const TopNavBar = (props) => {
-  const { theme } = useTheme();
-
   return (
     <div className="flex items-center justify-between border-grey dark:border-grey border-b px-4">
       <span className="text-base font-gilroy-semibolditalic">
@@ -32,7 +28,7 @@ const TopNavBar = (props) => {
           <span className="text-base font-gilroy-medium text-highlight dark:text-white mr-4">
             Menu
           </span>
-          <Image src={images.menu[theme || "dark"]} alt="Menu" />
+          <NextImage src="menu" alt="Menu" />
         </div>
       </div>
     </div>

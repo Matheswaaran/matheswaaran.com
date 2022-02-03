@@ -1,6 +1,13 @@
 const images = {
-  darkMode: require("./img/header/dark-theme.svg"),
-  lightMode: require("./img/header/light-theme.svg"),
+  placeholder: {
+    light: require("./img/placeholder.png"),
+    dark: require("./img/placeholder.png"),
+  },
+  mode: {
+    // Swapping the light and dark mode as it should be reversed on changing modes
+    light: require("./img/header/dark-theme.svg"),
+    dark: require("./img/header/light-theme.svg"),
+  },
   github: {
     light: require("./img/header/dark/github.svg"),
     dark: require("./img/header/dark/github.svg"),
