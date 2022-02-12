@@ -3,8 +3,8 @@ import NextImage from "./NextImage";
 
 const Footer = (props) => {
   return (
-    <div className="flex items-center justify-between border-grey dark:border-grey border-t px-4">
-      <div className="pl-0 px-4 py-2 border-grey dark:border-grey border-r">
+    <div className="flex items-center justify-between border-grey dark:border-grey border-t">
+      <div className="px-4 py-2 border-grey dark:border-grey border-r">
         <NextImage src="logout" alt="First step" className="cursor-pointer" />
       </div>
       <div className="flex items-center text-sm font-gilroy-medium text-graySecondary dark:text-gray">
@@ -35,7 +35,7 @@ const Footer = (props) => {
             className="cursor-pointer"
           />
         </div>
-        <div className="px-4 py-2 pr-0">
+        <div className="px-4 py-2">
           <NextImage
             src="arrowRight"
             alt="First step"
