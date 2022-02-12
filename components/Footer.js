@@ -4,7 +4,7 @@ import NextImage from "./NextImage";
 const Footer = (props) => {
   return (
     <div className="flex items-center justify-between border-grey dark:border-grey border-t">
-      <div className="px-4 py-2 border-grey dark:border-grey border-r">
+      <div className="flex items-center px-4 py-2 border-grey dark:border-grey border-r">
         <NextImage src="logout" alt="First step" className="cursor-pointer" />
       </div>
       <div className="flex items-center text-sm font-gilroy-medium text-graySecondary dark:text-gray">
@@ -27,15 +27,15 @@ const Footer = (props) => {
           Me
         </a>
       </div>
-      <div className="flex items-stretch justify-end">
-        <div className="px-4 py-2 border-grey dark:border-grey border-l border-r">
+      <div className="flex items-center justify-end">
+        <div className="flex items-center px-4 py-2 border-grey dark:border-grey border-l border-r">
           <NextImage
             src="arrowLeft"
             alt="First step"
             className="cursor-pointer"
           />
         </div>
-        <div className="px-4 py-2">
+        <div className="flex items-center px-4 py-2">
           <NextImage
             src="arrowRight"
             alt="First step"
