@@ -3,7 +3,7 @@ import Intro from "./Intro";
 import About from "./About";
 import About2 from "./About2";
 
-export default [
+const HomeSections = [
   {
     id: "intro",
     data: {
@@ -30,3 +30,5 @@ export default [
     content: <About2/>
   }
 ];
+
+export default HomeSections;

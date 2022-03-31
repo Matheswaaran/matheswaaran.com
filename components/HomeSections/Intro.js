@@ -4,7 +4,7 @@ const Intro = (props) => {
   return (
     <div className="relative flex flex-col items-center">
       <div className="z-[-100] absolute left-[-120%] top-[-200px] flex items-start text-grey opacity-20">
-        <span className="text-[21rem] rotate-90 font-gilroy-bold">I'M</span>
+        <span className="text-[21rem] rotate-90 font-gilroy-bold">{"I'M"}</span>
         <span className="text-[40rem] leading-none font-gilroy-bold">Mat</span>
       </div>
       <div>

@@ -7,7 +7,7 @@ const HomeSections = () => {
   return (
     <ImpressContainer>
       <Impress
-        fallbackMessage={<p>Sorry, your <b>device or browser</b> couldn't support well.</p>}
+        fallbackMessage="Sorry, your device or browser couldn't support well."
         hintOn={false}
         // hintMessage={<div className="absolute left-0 bottom-[100px]">Hint</div>}
       >
