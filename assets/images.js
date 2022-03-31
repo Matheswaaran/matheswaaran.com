@@ -9,7 +9,7 @@ const images = {
     dark: require("./img/header/light-theme.svg"),
   },
   github: {
-    light: require("./img/header/dark/github.svg"),
+    light: require("./img/header/light/github.svg"),
     dark: require("./img/header/dark/github.svg"),
   },
   instagram: {
@@ -30,11 +30,11 @@ const images = {
   },
   dribbble: {
     light: require("./img/header/light/dribbble.svg"),
-    dark: require("./img/header/light/dribbble.svg"),
+    dark: require("./img/header/dark/dribbble.svg"),
   },
   behance: {
     light: require("./img/header/light/behance.svg"),
-    dark: require("./img/header/light/behance.svg"),
+    dark: require("./img/header/dark/behance.svg"),
   },
   menu: {
     light: require("./img/header/light/menu.svg"),

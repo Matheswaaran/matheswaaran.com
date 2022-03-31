@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ImpressContainer = styled.div`
   .step {
-    opacity: 0.2;
+    opacity: 0.1;
   }
 
   .active {
