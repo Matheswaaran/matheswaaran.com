@@ -4,15 +4,17 @@ import Link from "next/link";
 
 const ButtonContent = (props) => {
   return (
-    <div className="px-4 py-1 rounded cursor-pointer text-highlight dark:text-white shadow-default dark:shadow-primary bg-lightGray dark:bg-transparent">
+    <div
+      className={`rounded-lg cursor-pointer text-highlight dark:text-white shadow-default dark:shadow-primary bg-lightGray dark:bg-transparent`}
+    >
       {props.size === "small" && (
-        <span className="text-sm">{props.children}</span>
+        <div className="px-4 py-2 text-sm leading-none">{props.children}</div>
       )}
       {props.size === "medium" && (
-        <span className="text-lg">{props.children}</span>
+        <div className="px-6 py-3 text-lg leading-none">{props.children}</div>
       )}
       {props.size === "large" && (
-        <span className="text-3xl">{props.children}</span>
+        <div className="px-8 py-2 text-3xl leading-none">{props.children}</div>
       )}
     </div>
   );
@@ -40,7 +42,8 @@ const Button = (props) => {
 };
 
 Button.defaultProps = {
-  onClick: () => {},
+  onClick: () => {
+  },
   size: "small",
   to: "/",
   external: false,

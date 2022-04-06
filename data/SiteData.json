@@ -9,5 +9,82 @@
     "twitter": "https://twitter.com/matheswaaran_s",
     "linkedin": "https://www.linkedin.com/in/matheswaaran/",
     "instagram": "https://instagram.com/matheswaaran"
+  },
+  "blog": {
+    "section_title": "Blog",
+    "blog_link": "https://matheswaaran.medium.com/",
+    "blog1": {
+      "image": false,
+      "image_url": "",
+      "title": "Image Compression in ReactJs",
+      "description": "Compress your images before upload using the amazing tool called “compressorjs",
+      "year": 2021,
+      "url": "https://medium.com/front-end-weekly/image-compression-in-reactjs-a07ec0066b24"
+    },
+    "blog2": {
+      "image": false,
+      "image_url": "",
+      "title": "Serving Apple App Site Association file using Nginx for React Apps",
+      "description": "Serving the apple-app-site-association.json or apple-app-site-association.applescript file through an Nginx server.",
+      "year": 2020,
+      "url": "https://matheswaaran.medium.com/serving-apple-app-site-association-file-using-nginx-for-react-apps-89b2d48a9fa4"
+    },
+    "blog3": {
+      "image": false,
+      "image_url": "",
+      "title": "Authenticate using Apple on Web using Firebase Auth",
+      "description": "Authenticate your apps using apple in the web using javascript and Firebase Auth.",
+      "year": 2020,
+      "url": "https://medium.com/swlh/sign-in-with-apple-for-web-using-firebase-auth-js-b13eb7a0e104"
+    },
+    "blog4": {
+      "image": false,
+      "image_url": "",
+      "title": "How to Handle Multiple Environments in a React App",
+      "description": "Set up your React app for environments beyond development and production.",
+      "year": 2019,
+      "url": "https://betterprogramming.pub/managing-environments-for-provisional-builds-with-react-app-1fb411e3597"
+    },
+    "blog5": {
+      "image": false,
+      "image_url": "",
+      "title": "Recording MP3 audio using ReactJs under 5 minutes",
+      "description": "Recording an MP3 audio file in ReactJs using javascript in under 5 minutes.",
+      "year": 2019,
+      "url": "https://medium.com/front-end-weekly/recording-audio-in-mp3-using-reactjs-under-5-minutes-5e960defaf10"
+    }
+  },
+  "experience": {
+    "section_title": "Experience",
+    "experience1": {
+      "title": "Testpress Tech Labs",
+      "description": "Senior Developer",
+      "year": "2021 - Present"
+    },
+    "experience2": {
+      "title": "NFN Labs",
+      "description": "Frontend Developer",
+      "year": "2018 - 2021"
+    },
+    "experience3": {
+      "title": "PSNA College of Engg. & Tech.",
+      "description": "Bachelor of Information Technology",
+      "year": "2014 - 2018"
+    },
+    "experience4": {
+      "title": "Mahatma Montessori Matric. Hr. Sec. School",
+      "description": "Higher Secondary Schooling",
+      "year": "2008 - 2014"
+    },
+    "experience5": {
+      "title": "MAVMM Matric. Hr. Sec. School",
+      "description": "Schooling",
+      "year": "2002 - 2008"
+    }
+  },
+  "projects": {
+    "section_title": "Projects",
+    "project1": {
+    }
   }
 }
