@@ -11,7 +11,7 @@ const ImpressContainer = styled.div`
     -webkit-transition: opacity 1s;
   }
 
-  .hint {
+  .hint, .mobile-hint {
     display: none;
   }
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogCard = (props) => {
   return (
-    <div className="w-[40vw] font-gilroy-semibold text-highlight dark:text-white">
+    <div className="w-screen md:w-[70vw] lg:w-[40vw] font-gilroy-semibold text-highlight dark:text-white">
       <div className="text-4xl">Title</div>
       <p
         className="text-grey font-gilroy-medium text-4xl mt-2"
