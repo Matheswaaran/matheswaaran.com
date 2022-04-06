@@ -26,4 +26,8 @@ const HomeSections = () => {
   );
 };
 
+export {
+  Impress
+};
+
 export default HomeSections;

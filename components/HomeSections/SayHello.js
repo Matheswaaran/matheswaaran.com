@@ -7,9 +7,9 @@ const SayHello = (props) => {
       <span className="font-gilroy-medium text-xl mb-8">Feel free to email me about anything. </span>
       <span className="font-gilroy-medium text-xl">
         You can also reach me around the web:
-        <a className="text-primary mr-3 ml-3" href="#">GitHub,</a>
-        <a className="text-primary mr-3" href="#">Twitter,</a>
-        <a className="text-primary mr-3" href="#">Instagram</a>
+        <a className="text-secondary dark:text-primary mr-3 ml-3" href="#">GitHub,</a>
+        <a className="text-secondary dark:text-primary mr-3" href="#">Twitter,</a>
+        <a className="text-secondary dark:text-primary mr-3" href="#">Instagram</a>
       </span>
     </div>
   );
