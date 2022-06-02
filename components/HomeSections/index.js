@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 import SiteData from "../../data/SiteData.json";
 import Intro from "./Intro";
 import About from "./About";
 import About2 from "./About2";
 import Section from "./Section";
 import BlogCard from "./BlogCard";
+import ProjectCard from "../cards/ProjectCard";
+import Skills from "./Skills";
 import SayHello from "./SayHello";
 
 const HomeSections = [
@@ -12,17 +14,17 @@ const HomeSections = [
     id: "intro",
     data: {
       x: -1000,
-      y: -1500
+      y: -1500,
     },
-    content: <Intro/>,
+    content: <Intro />,
   },
   {
     id: "about",
     data: {
       x: -300,
-      y: -1500
+      y: -1500,
     },
-    content: <About/>
+    content: <About />,
   },
   {
     id: "about-2",
@@ -31,7 +33,7 @@ const HomeSections = [
       y: -1500,
       rotateZ: 90,
     },
-    content: <About2/>
+    content: <About2 />,
   },
   {
     id: "blog",
@@ -39,9 +41,9 @@ const HomeSections = [
       x: -1000,
       y: -400,
       rotateZ: 0,
-      scale: 6
+      scale: 6,
     },
-    content: <Section title={SiteData.blog.section_title}/>
+    content: <Section title={SiteData.blog.section_title} />,
   },
   {
     id: "blog-1",
@@ -49,7 +51,7 @@ const HomeSections = [
       x: -1200,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog1}/>
+    content: <BlogCard data={SiteData.blog.blog1} />,
   },
   {
     id: "blog-2",
@@ -57,7 +59,7 @@ const HomeSections = [
       x: -300,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog2}/>
+    content: <BlogCard data={SiteData.blog.blog2} />,
   },
   {
     id: "blog-3",
@@ -65,7 +67,7 @@ const HomeSections = [
       x: 600,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog3}/>
+    content: <BlogCard data={SiteData.blog.blog3} />,
   },
   {
     id: "blog-4",
@@ -73,7 +75,7 @@ const HomeSections = [
       x: 1500,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog4}/>
+    content: <BlogCard data={SiteData.blog.blog4} />,
   },
   {
     id: "blog-5",
@@ -81,7 +83,9 @@ const HomeSections = [
       x: 2400,
       y: -200,
     },
-    content: <BlogCard data={SiteData.blog.blog5} showAll={SiteData.blog.blog_link}/>
+    content: (
+      <BlogCard data={SiteData.blog.blog5} showAll={SiteData.blog.blog_link} />
+    ),
   },
   {
     id: "experience",
@@ -89,9 +93,9 @@ const HomeSections = [
       x: 6000,
       y: 1700,
       rotateY: 180,
-      scale: 6
+      scale: 6,
     },
-    content: <Section title={SiteData.experience.section_title}/>
+    content: <Section title={SiteData.experience.section_title} />,
   },
   {
     id: "experience-1",
@@ -100,7 +104,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience1}/>
+    content: <BlogCard data={SiteData.experience.experience1} />,
   },
   {
     id: "experience-2",
@@ -109,7 +113,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience2}/>
+    content: <BlogCard data={SiteData.experience.experience2} />,
   },
   {
     id: "experience-3",
@@ -118,7 +122,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience3}/>
+    content: <BlogCard data={SiteData.experience.experience3} />,
   },
   {
     id: "experience-4",
@@ -127,7 +131,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience4}/>
+    content: <BlogCard data={SiteData.experience.experience4} />,
   },
   {
     id: "experience-5",
@@ -136,7 +140,7 @@ const HomeSections = [
       y: 1700,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience5}/>
+    content: <BlogCard data={SiteData.experience.experience5} />,
   },
   {
     id: "skills",
@@ -144,9 +148,9 @@ const HomeSections = [
       x: 1400,
       y: 3700,
       rotateY: 180,
-      rotateZ: 90
+      rotateZ: 90,
     },
-    content: <About2/>
+    content: <Skills />,
   },
   {
     id: "projects",
@@ -154,9 +158,14 @@ const HomeSections = [
       x: 2500,
       y: 4500,
       rotateY: 180,
-      rotateZ: 180
+      rotateZ: 180,
     },
-    content: <BlogCard data={SiteData.blog.blog1}/>
+    content: (
+      <ProjectCard
+        data={SiteData.projects.project1}
+        show_heading={SiteData.projects.section_title}
+      />
+    ),
   },
   {
     id: "projects-1",
@@ -164,29 +173,29 @@ const HomeSections = [
       x: 3400,
       y: 4500,
       rotateY: 180,
-      rotateZ: 180
+      rotateZ: 180,
     },
-    content: <BlogCard data={SiteData.blog.blog1}/>
+    content: <ProjectCard data={SiteData.projects.project2} />,
   },
-  {
-    id: "projects-2",
-    data: {
-      x: 4300,
-      y: 4500,
-      rotateY: 180,
-      rotateZ: 180
-    },
-    content: <BlogCard data={SiteData.blog.blog1}/>
-  },
+  // {
+  //   id: "projects-2",
+  //   data: {
+  //     x: 4300,
+  //     y: 4500,
+  //     rotateY: 180,
+  //     rotateZ: 180,
+  //   },
+  //   content: <ProjectCard data={SiteData.blog.blog1} />,
+  // },
   {
     id: "say-hello",
     data: {
       x: 5500,
       y: 4900,
       rotateY: 180,
-      rotateZ: 270
+      rotateZ: 270,
     },
-    content: <SayHello/>
+    content: <SayHello />,
   },
 ];
 
