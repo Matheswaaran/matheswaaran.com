@@ -8,7 +8,7 @@ const Section = (props) => {
     >
       <span className="font-gilroy-semibold text-6xl text-highlight dark:text-white relative">
         {props.title}
-        <div className="absolute left-0 top-12 w-full h-[44px] bg-primary opacity-20"/>
+        <div className="absolute left-0 top-12 w-full h-[44px] bg-secondary drak:bg-primary opacity-20"/>
       </span>
     </div>
   );
