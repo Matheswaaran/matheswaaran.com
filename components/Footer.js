@@ -1,17 +1,22 @@
 import React from "react";
-import NextImage from "./NextImage";
+
+import {Logout} from "styled-icons/material-outlined";
+import {ArrowLeft, ArrowRight} from "styled-icons/octicons";
+import {Heart} from "styled-icons/boxicons-solid"
 
 const Footer = (props) => {
   return (
     <div className="flex items-center justify-between border-grey dark:border-grey border-t">
       <div className="flex items-center px-4 py-2 border-grey dark:border-grey border-r">
-        <NextImage src="logout" alt="First step" className="cursor-pointer" />
+        <Logout
+          className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-8 w-8 rotate-[270deg]"
+        />
       </div>
       <div className="flex items-center text-sm font-gilroy-medium text-graySecondary dark:text-gray">
         <span className="mr-1">
           Copyright © 2021. All rights reserved | Made with
         </span>
-        <NextImage src="heart" alt="Mail address" />
+        <Heart className="text-secondary dark:text-primary h-5 w-5"/>
         <span className="mx-1">by</span>
         <a
           className="text-secondary dark:text-primary"
@@ -29,17 +34,13 @@ const Footer = (props) => {
       </div>
       <div className="flex items-center justify-end">
         <div className="flex items-center px-4 py-2 border-grey dark:border-grey border-l border-r">
-          <NextImage
-            src="arrowLeft"
-            alt="First step"
-            className="cursor-pointer"
+          <ArrowLeft
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-8 w-8"
           />
         </div>
         <div className="flex items-center px-4 py-2">
-          <NextImage
-            src="arrowRight"
-            alt="First step"
-            className="cursor-pointer"
+          <ArrowRight
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-8 w-8"
           />
         </div>
       </div>

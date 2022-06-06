@@ -1,16 +1,14 @@
 import React from "react";
-import { useTheme } from "next-themes";
-import NextImage from "../NextImage";
+import {useTheme} from "next-themes";
+import {DarkTheme} from "styled-icons/fluentui-system-regular"
 
 const ThemeToggle = (props) => {
-  const { theme, setTheme } = useTheme();
+  const {theme, setTheme} = useTheme();
 
   return (
-    <NextImage
+    <DarkTheme
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      src="mode"
-      alt="Toggle dark theme"
-      className="cursor-pointer"
+      className="cursor-pointer text-highlight dark:text-white h-5 w-5"
     />
   );
 };

@@ -1,46 +1,64 @@
 import React from "react";
 import SiteData from "../../data/SiteData.json";
-import NextImage from "../NextImage";
+
+import {Mail} from "styled-icons/fluentui-system-filled";
+import {Behance, Dribbble, Facebook, Github, Instagram, Linkedin, Twitter} from "styled-icons/boxicons-logos";
 
 const SocialMediaProfiles = (props) => {
   return (
     <React.Fragment>
       <a href={`mailto:${SiteData.mail}`}>
-        <NextImage src="mail" alt="Mail address" />
+        <Mail
+          className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+        />
       </a>
       {SiteData.social.github && (
         <a href={SiteData.social.github} target="_blank" rel="noreferrer">
-          <NextImage src="github" alt="Github" />
+          <Github
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
         </a>
       )}
       {SiteData.social.twitter && (
         <a href={SiteData.social.twitter} target="_blank" rel="noreferrer">
-          <NextImage src="twitter" alt="Twitter" />
-        </a>
-      )}
-      {SiteData.social.facebook && (
-        <a href={SiteData.social.facebook} target="_blank" rel="noreferrer">
-          <NextImage src="instagram" alt="Instagram" />
+          <Twitter
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
         </a>
       )}
       {SiteData.social.linkedin && (
         <a href={SiteData.social.linkedin} target="_blank" rel="noreferrer">
-          <NextImage src="linkedin" alt="LinkedIn" />
+          <Linkedin
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
         </a>
       )}
       {SiteData.social.instagram && (
         <a href={SiteData.social.instagram} target="_blank" rel="noreferrer">
-          <NextImage src="instagram" alt="Instagram" />
+          <Instagram
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
         </a>
       )}
       {SiteData.social.dribbble && (
         <a href={SiteData.social.dribbble} target="_blank" rel="noreferrer">
-          <NextImage src="dribbble" alt="Dribbble" />
+          <Dribbble
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
         </a>
       )}
       {SiteData.social.behance && (
         <a href={SiteData.social.behance} target="_blank" rel="noreferrer">
-          <NextImage src="behance" alt="Behance" />
+          <Behance
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
+        </a>
+      )}
+      {SiteData.social.facebook && (
+        <a href={SiteData.social.facebook} target="_blank" rel="noreferrer">
+          <Facebook
+            className="cursor-pointer text-highlight hover:text-secondary dark:text-white dark:hover:text-primary h-5 w-5"
+          />
         </a>
       )}
     </React.Fragment>
