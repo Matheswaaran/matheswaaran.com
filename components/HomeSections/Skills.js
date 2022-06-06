@@ -3,7 +3,7 @@ import {Coffee} from "styled-icons/feather"
 
 const Skills = (props) => {
   return (
-    <div className="w-[75vw] relative">
+    <div className="w-[200vw] lg:w-[75vw] relative">
       <div className="absolute right-0 bottom-[-250px]">
         <Coffee className="text-secondary dark:text-primary h-[350px] w-[350px] opacity-20"/>
       </div>

@@ -9,6 +9,10 @@ import ProjectCard from "../cards/ProjectCard";
 import Skills from "./Skills";
 import SayHello from "./SayHello";
 
+// Icons
+import {BookOpen} from "styled-icons/remix-line"
+import {BriefcaseOutline} from "styled-icons/evaicons-outline";
+
 const HomeSections = [
   {
     id: "intro",
@@ -43,7 +47,12 @@ const HomeSections = [
       rotateZ: 0,
       scale: 6,
     },
-    content: <Section title={SiteData.blog.section_title}/>,
+    content: (
+      <Section
+        title={SiteData.blog.section_title}
+        icon={<BookOpen className="text-secondary dark:text-primary h-[50px] w-[50px]"/>}
+      />
+    ),
   },
   {
     id: "blog-1",
@@ -95,7 +104,12 @@ const HomeSections = [
       rotateY: 180,
       scale: 6,
     },
-    content: <Section title={SiteData.experience.section_title}/>,
+    content: (
+      <Section
+        title={SiteData.experience.section_title}
+        icon={<BriefcaseOutline className="text-secondary dark:text-primary h-[50px] w-[50px]"/>}
+      />
+    ),
   },
   {
     id: "experience-1",
