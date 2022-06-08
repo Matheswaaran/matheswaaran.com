@@ -6,6 +6,7 @@ import About2 from "./About2";
 import Section from "./Section";
 import BlogCard from "./BlogCard";
 import ProjectCard from "../cards/ProjectCard";
+import ExpirenceCard from "../cards/ExpirenceCard";
 import Skills from "./Skills";
 import SayHello from "./SayHello";
 
@@ -118,7 +119,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience1}/>,
+    content: <ExpirenceCard data={SiteData.experience.experience1}/>,
   },
   {
     id: "experience-2",
@@ -127,7 +128,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience2}/>,
+    content: <ExpirenceCard data={SiteData.experience.experience2}/>,
   },
   {
     id: "experience-3",
@@ -136,7 +137,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience3}/>,
+    content: <ExpirenceCard data={SiteData.experience.experience3}/>,
   },
   {
     id: "experience-4",
@@ -145,7 +146,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience4}/>,
+    content: <ExpirenceCard data={SiteData.experience.experience4}/>,
   },
   {
     id: "experience-5",
@@ -154,7 +155,7 @@ const HomeSections = [
       y: 1700,
       rotateY: 180,
     },
-    content: <BlogCard data={SiteData.experience.experience5}/>,
+    content: <ExpirenceCard data={SiteData.experience.experience5}/>,
   },
   {
     id: "skills",
