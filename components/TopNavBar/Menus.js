@@ -60,7 +60,7 @@ const Menus = (props) => {
             Get in touch
           </span>
         </div>
-        <div className="flex lg:hidden items-center justify-center mt-2 mb-8">
+        <div className="flex lg:hidden items-center justify-center mt-6 mb-8">
           <Button size="medium" to={SiteData.resume} external={true}>
             Resume
           </Button>
