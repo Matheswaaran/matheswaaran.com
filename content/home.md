@@ -2,7 +2,7 @@
 intro:
   super_heading: Hello everybody, I’m
   name: Matheswaaran
-  background_text: MAT
+  background_text: Mat
 about:
   title: Developer
   description: I’m an experienced developer with deep interest in modern web development.
