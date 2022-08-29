@@ -1,5 +1,4 @@
 import React from "react";
-import SiteData from "../../data/SiteData.json";
 import Intro from "./Intro";
 import About from "./About";
 import About2 from "./About2";
@@ -10,9 +9,15 @@ import ExpirenceCard from "../cards/ExpirenceCard";
 import Skills from "./Skills";
 import SayHello from "./SayHello";
 
+import { attributes as homeAttributes } from "../../content/home.md";
+import { attributes as blogAttributes } from "../../content/blogs.md";
+import { attributes as experienceAttributes } from "../../content/experience.md";
+import { attributes as projectsAttributes } from "../../content/projects.md";
+import { attributes as skillsAttributes } from "../../content/skills.md";
+
 // Icons
-import {BookOpen} from "styled-icons/remix-line"
-import {BriefcaseOutline} from "styled-icons/evaicons-outline";
+import { BookOpen } from "styled-icons/remix-line";
+import { BriefcaseOutline } from "styled-icons/evaicons-outline";
 
 const HomeSections = [
   {
@@ -21,7 +26,7 @@ const HomeSections = [
       x: -1000,
       y: -1500,
     },
-    content: <Intro/>,
+    content: <Intro data={homeAttributes.intro} />,
   },
   {
     id: "about",
@@ -29,7 +34,7 @@ const HomeSections = [
       x: -300,
       y: -1500,
     },
-    content: <About/>,
+    content: <About data={homeAttributes.about} />,
   },
   {
     id: "about-2",
@@ -38,7 +43,7 @@ const HomeSections = [
       y: -1500,
       rotateZ: 90,
     },
-    content: <About2/>,
+    content: <About2 data={homeAttributes.about} />,
   },
   {
     id: "blog",
@@ -50,8 +55,10 @@ const HomeSections = [
     },
     content: (
       <Section
-        title={SiteData.blog.section_title}
-        icon={<BookOpen className="text-secondary dark:text-primary h-[50px] w-[50px]"/>}
+        title={blogAttributes.section_title}
+        icon={
+          <BookOpen className="text-secondary dark:text-primary h-[50px] w-[50px]" />
+        }
       />
     ),
   },
@@ -61,7 +68,7 @@ const HomeSections = [
       x: -1200,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog1}/>,
+    content: <BlogCard data={blogAttributes.Blogs[0]} />,
   },
   {
     id: "blog-2",
@@ -69,7 +76,7 @@ const HomeSections = [
       x: -300,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog2}/>,
+    content: <BlogCard data={blogAttributes.Blogs[1]} />,
   },
   {
     id: "blog-3",
@@ -77,7 +84,7 @@ const HomeSections = [
       x: 600,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog3}/>,
+    content: <BlogCard data={blogAttributes.Blogs[2]} />,
   },
   {
     id: "blog-4",
@@ -85,7 +92,7 @@ const HomeSections = [
       x: 1500,
       y: 800,
     },
-    content: <BlogCard data={SiteData.blog.blog4}/>,
+    content: <BlogCard data={blogAttributes.Blogs[3]} />,
   },
   {
     id: "blog-5",
@@ -94,7 +101,10 @@ const HomeSections = [
       y: -200,
     },
     content: (
-      <BlogCard data={SiteData.blog.blog5} showAll={SiteData.blog.blog_link}/>
+      <BlogCard
+        data={blogAttributes.Blogs[4]}
+        showAll={blogAttributes.blog_url}
+      />
     ),
   },
   {
@@ -107,8 +117,10 @@ const HomeSections = [
     },
     content: (
       <Section
-        title={SiteData.experience.section_title}
-        icon={<BriefcaseOutline className="text-secondary dark:text-primary h-[50px] w-[50px]"/>}
+        title={experienceAttributes.section_title}
+        icon={
+          <BriefcaseOutline className="text-secondary dark:text-primary h-[50px] w-[50px]" />
+        }
       />
     ),
   },
@@ -119,7 +131,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={SiteData.experience.experience1}/>,
+    content: <ExpirenceCard data={experienceAttributes.Experience[0]} />,
   },
   {
     id: "experience-2",
@@ -128,7 +140,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={SiteData.experience.experience2}/>,
+    content: <ExpirenceCard data={experienceAttributes.Experience[1]} />,
   },
   {
     id: "experience-3",
@@ -137,7 +149,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={SiteData.experience.experience3}/>,
+    content: <ExpirenceCard data={experienceAttributes.Experience[2]} />,
   },
   {
     id: "experience-4",
@@ -146,7 +158,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={SiteData.experience.experience4}/>,
+    content: <ExpirenceCard data={experienceAttributes.Experience[3]} />,
   },
   {
     id: "experience-5",
@@ -155,7 +167,7 @@ const HomeSections = [
       y: 1700,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={SiteData.experience.experience5}/>,
+    content: <ExpirenceCard data={experienceAttributes.Experience[4]} />,
   },
   {
     id: "skills",
@@ -165,7 +177,7 @@ const HomeSections = [
       rotateY: 180,
       rotateZ: 90,
     },
-    content: <Skills/>,
+    content: <Skills data={skillsAttributes} />,
   },
   {
     id: "projects",
@@ -177,8 +189,8 @@ const HomeSections = [
     },
     content: (
       <ProjectCard
-        data={SiteData.projects.project1}
-        show_heading={SiteData.projects.section_title}
+        data={projectsAttributes.Projects[0]}
+        show_heading={projectsAttributes.section_title}
       />
     ),
   },
@@ -190,7 +202,7 @@ const HomeSections = [
       rotateY: 180,
       rotateZ: 180,
     },
-    content: <ProjectCard data={SiteData.projects.project2}/>,
+    content: <ProjectCard data={projectsAttributes.Projects[1]} />,
   },
   // {
   //   id: "projects-2",
@@ -210,7 +222,7 @@ const HomeSections = [
       rotateY: 180,
       rotateZ: 270,
     },
-    content: <SayHello/>,
+    content: <SayHello />,
   },
 ];
 

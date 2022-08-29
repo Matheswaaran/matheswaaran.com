@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SiteData from "../../data/SiteData.json";
+import { attributes as contactAttributes } from "../../content/contact_details.md";
 import Button from "../Button";
 import SocialMediaProfiles from "./SocialMediaProfiles";
 import CopyRight from "../Footer/CopyRight";
@@ -61,7 +61,7 @@ const Menus = (props) => {
           </span>
         </div>
         <div className="flex lg:hidden items-center justify-center mt-6 mb-8">
-          <Button size="medium" to={SiteData.resume} external={true}>
+          <Button size="medium" to={contactAttributes.resume} external={true}>
             Resume
           </Button>
         </div>

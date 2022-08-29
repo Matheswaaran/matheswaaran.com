@@ -1,24 +1,19 @@
 import React from "react";
 import Head from "next/head";
+import { attributes } from "../content/site_meta.md";
 
 const Header = (props) => {
   return (
     <Head>
-      <title>Home - matheswaaran.com</title>
+      <title>{attributes.head_title}</title>
       <link rel="icon" href="/favicon.ico" />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@matheswaaran_s" />
-      <meta name="twitter:creator" content="@matheswaaran_s" />
-      <meta property="og:url" content="https://matheswaaran.com/" />
-      <meta property="og:title" content="All about Mat" />
-      <meta
-        property="og:description"
-        content="Things Mat(Me) has done so far 😁"
-      />
-      <meta
-        property="og:image"
-        content="https://matheswaaran.com/images/me.JPG"
-      />
+      <meta name="twitter:card" content={attributes.twitter_card} />
+      <meta name="twitter:site" content={attributes.twitter_site} />
+      <meta name="twitter:creator" content={attributes.twitter_creator} />
+      <meta property="og:url" content={attributes.og_url} />
+      <meta property="og:title" content={attributes.og_title} />
+      <meta property="og:description" content={attributes.og_description} />
+      <meta property="og:image" content={attributes.og_image} />
 
       {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
