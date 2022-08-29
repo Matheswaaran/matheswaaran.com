@@ -1,5 +1,6 @@
 ---
 section_title: Blog
+blog_url: https://matheswaaran.medium.com
 Blogs:
   - image: false
     year: "2022"
