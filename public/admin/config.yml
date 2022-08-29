@@ -10,6 +10,8 @@ collections:
     files:
       - label: "Site Meta"
         name: "site_meta"
+        editor:
+          preview: false
         file: "content/site_meta.md"
         fields:
           - { label: "Site Title", name: "site_title", widget: "string" }
@@ -24,6 +26,8 @@ collections:
 
       - label: "Home"
         name: "home"
+        editor:
+          preview: false
         file: "content/home.md"
         fields:
           - label: "Intro"
@@ -47,6 +51,8 @@ collections:
 
       - label: "Contact Details"
         name: "contact_details"
+        editor:
+          preview: false
         file: "content/contact_details.md"
         fields:
           - { label: "Email Address", name: "mail", widget: "string" }
@@ -74,6 +80,8 @@ collections:
 
       - label: "Blogs"
         name: "blogs"
+        editor:
+          preview: false
         file: "content/blogs.md"
         fields:
           - { label: "Section Title", name: "section_title", widget: "string" }
@@ -93,6 +101,8 @@ collections:
 
       - label: "Experience"
         name: "experience"
+        editor:
+          preview: false
         file: "content/experience.md"
         fields:
           - { label: "Section Title", name: "section_title", widget: "string" }
@@ -110,6 +120,8 @@ collections:
 
       - label: "Skills"
         name: "skills"
+        editor:
+          preview: false
         file: "content/skills.md"
         fields:
           - { label: "Section Title", name: "section_title", widget: "string" }
@@ -121,6 +133,8 @@ collections:
 
       - label: "Projects"
         name: "projects"
+        editor:
+          preview: false
         file: "content/projects.md"
         fields:
           - { label: "Section Title", name: "section_title", widget: "string" }
