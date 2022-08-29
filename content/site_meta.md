@@ -1,5 +1,6 @@
 ---
 site_title: Matheswaaran
+head_title: Home - matheswaaran.com
 og_url: https://matheswaaran.com
 og_title: All about Mat
 og_description: Things Mat(Me) has done so far 😁
