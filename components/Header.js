@@ -19,6 +19,9 @@ const Header = (props) => {
         property="og:image"
         content="https://matheswaaran.com/images/me.JPG"
       />
+
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </Head>
   );
 };
