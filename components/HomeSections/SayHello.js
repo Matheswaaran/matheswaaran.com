@@ -28,9 +28,10 @@ const SayHello = (props) => {
       <span className="font-gilroy-medium text-xl mb-8">
         You can also reach me around the web:
         <br className="block lg:hidden" />
-        {contactAttributes.show_in_get_in_touch.map((social) => (
+        {contactAttributes.show_in_get_in_touch.map((social, i) => (
           <a
             className="text-secondary capitalize dark:text-primary ml-3"
+            key={i}
             href={contactAttributes[social]}
           >
             {social},

@@ -11,8 +11,10 @@ const Skills = (props) => {
         {props.data.section_title}
       </div>
       <div className="flex flex-wrap items-center justify-between text-grey text-lg font-gilroy-medium leading-loose">
-        {props.data.Skills.map((skill) => (
-          <div className="w-1/2">{skill}</div>
+        {props.data.Skills.map((skill, i) => (
+          <div className="w-1/2" key={i}>
+            {skill}
+          </div>
         ))}
       </div>
     </div>
