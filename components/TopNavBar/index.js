@@ -1,18 +1,18 @@
 import React from "react";
-import { Menu } from "styled-icons/heroicons-outline";
-import { Close } from "@styled-icons/material";
+import {Menu} from "styled-icons/heroicons-outline";
+import {Close} from "@styled-icons/material";
 
 import Button from "../Button";
 import ThemeToggle from "./ThemeToggle";
 import SocialMediaProfiles from "./SocialMediaProfiles";
 import Menus from "./Menus";
-import { attributes as siteMetaAttributes } from "../../content/site_meta.md";
-import { attributes as contactAttributes } from "../../content/contact_details.md";
+import {attributes as siteMetaAttributes} from "../../content/site_meta.md";
+import {attributes as contactAttributes} from "../../content/contact_details.md";
 
 const TopNavBar = (props) => {
   const [openMenu, setOpenMenu] = React.useState(false);
   return (
-    <React.Fragment>
+    <header className="z-40">
       <div className="flex items-center justify-between border-grey dark:border-grey border-b px-4">
         <span className="text-base font-gilroy-semibolditalic">
           {siteMetaAttributes.site_title}
@@ -24,7 +24,7 @@ const TopNavBar = (props) => {
             </Button>
           </div>
           <div className="border-grey dark:border-grey border-r border-l p-4">
-            <ThemeToggle />
+            <ThemeToggle/>
           </div>
           <div className="border-grey dark:border-grey border-r p-4 space-x-2 hidden lg:block">
             <SocialMediaProfiles
@@ -46,15 +46,15 @@ const TopNavBar = (props) => {
               Menu
             </span>
             {openMenu ? (
-              <Close className="text-secondary dark:text-primary h-5 w-5" />
+              <Close className="text-secondary dark:text-primary h-5 w-5"/>
             ) : (
-              <Menu className="text-secondary dark:text-primary h-5 w-5" />
+              <Menu className="text-secondary dark:text-primary h-5 w-5"/>
             )}
           </div>
         </div>
       </div>
-      {openMenu && <Menus open={openMenu} setOpen={setOpenMenu} />}
-    </React.Fragment>
+      {openMenu && <Menus open={openMenu} setOpen={setOpenMenu}/>}
+    </header>
   );
 };
 
