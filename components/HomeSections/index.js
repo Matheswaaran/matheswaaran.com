@@ -3,9 +3,9 @@ import Intro from "./Intro";
 import About from "./About";
 import About2 from "./About2";
 import Section from "./Section";
-import BlogCard from "./BlogCard";
+import BlogCard from "../cards/BlogCard";
 import ProjectCard from "../cards/ProjectCard";
-import ExpirenceCard from "../cards/ExpirenceCard";
+import ExperienceCard from "../cards/ExpirenceCard";
 import Skills from "./Skills";
 import SayHello from "./SayHello";
 
@@ -131,7 +131,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={experienceAttributes.Experience[0]} />,
+    content: <ExperienceCard data={experienceAttributes.Experience[0]} />,
   },
   {
     id: "experience-2",
@@ -140,7 +140,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={experienceAttributes.Experience[1]} />,
+    content: <ExperienceCard data={experienceAttributes.Experience[1]} />,
   },
   {
     id: "experience-3",
@@ -149,7 +149,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={experienceAttributes.Experience[2]} />,
+    content: <ExperienceCard data={experienceAttributes.Experience[2]} />,
   },
   {
     id: "experience-4",
@@ -158,7 +158,7 @@ const HomeSections = [
       y: 2900,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={experienceAttributes.Experience[3]} />,
+    content: <ExperienceCard data={experienceAttributes.Experience[3]} />,
   },
   {
     id: "experience-5",
@@ -167,7 +167,7 @@ const HomeSections = [
       y: 1700,
       rotateY: 180,
     },
-    content: <ExpirenceCard data={experienceAttributes.Experience[4]} />,
+    content: <ExperienceCard data={experienceAttributes.Experience[4]} />,
   },
   {
     id: "skills",
