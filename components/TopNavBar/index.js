@@ -32,7 +32,7 @@ const TopNavBar = (props) => {
           <div className="border-grey dark:border-grey border-r border-l p-4">
             <ThemeToggle />
           </div>
-          <div className="border-grey dark:border-grey border-r p-4 space-x-2 hidden lg:block">
+          <div className="border-grey dark:border-grey border-r p-4 space-x-2 hidden lg:flex">
             <SocialMediaProfiles
               mail={contactAttributes.mail}
               phone={contactAttributes.phone}
