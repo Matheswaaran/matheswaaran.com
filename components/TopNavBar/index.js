@@ -1,7 +1,5 @@
 import React from "react";
-import { Menu } from "styled-icons/heroicons-outline";
-import { Close } from "@styled-icons/material";
-
+import { Close, Menu } from "styled-icons/material";
 import Button from "../Button";
 import ThemeToggle from "./ThemeToggle";
 import SocialMediaProfiles from "./SocialMediaProfiles";
@@ -20,7 +18,7 @@ const TopNavBar = (props) => {
     <header className="z-40">
       <div className="flex items-center justify-between border-grey dark:border-grey border-b px-4">
         <span
-          className="text-base font-gilroy-semibolditalic cursor-pointer"
+          className="text-base font-gilroy-semibold italic cursor-pointer"
           onClick={goToHomeSection}
         >
           {siteMetaAttributes.site_title}
