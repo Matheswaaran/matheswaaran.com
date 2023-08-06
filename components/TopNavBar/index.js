@@ -42,6 +42,7 @@ const TopNavBar = () => {
               phone={contactAttributes.phone}
               facebook={contactAttributes.facebook}
               linkedin={contactAttributes.linkedin}
+              twitter={contactAttributes.twitter}
               instagram={contactAttributes.instagram}
               github={contactAttributes.github}
               dribbble={contactAttributes.dribbble}
