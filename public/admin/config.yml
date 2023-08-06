@@ -156,3 +156,4 @@ collections:
               - { label: "Github", value: "github" }
               - { label: "Behance", value: "behance" }
               - { label: "Dribbble", value: "dribbble" }
+              - { label: "Twitter", value: "twitter" }
