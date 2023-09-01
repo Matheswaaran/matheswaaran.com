@@ -2,9 +2,13 @@
 section_title: Experience
 Experience:
   - is_education: false
+    title: UST Global
+    description: Developer III
+    year: 2023 - Present
+  - is_education: false
     title: Independent Freelancer
     description: Fullstack Developer
-    year: 2022 - Present
+    year: 2022 - 2023
   - is_education: false
     title: Testpress Tech Labs
     description: Senior Developer
@@ -17,8 +21,4 @@ Experience:
     title: PSNA College of Engg. & Tech.
     description: Bachelor of Information Technology
     year: 2014 - 2018
-  - is_education: true
-    title: Mahatma Montessori Matric. Hr. Sec. School
-    description: Higher Secondary Schooling
-    year: 2008 - 2014
 ---
